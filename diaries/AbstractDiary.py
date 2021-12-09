@@ -1,12 +1,15 @@
-from diaries.AbstractDiary import AbstractDiary
+from abc import ABC, abstractmethod
 
-class DiarySample(AbstractDiary):
+class AbstractDiary(ABC):
 
+    @abstractmethod
     def get_date(self):
-        return "2021-12-01"
+        pass
 
+    @abstractmethod
     def get_summary(self):
-        return "なにもない一日だった"
+        pass
 
+    @abstractmethod
     def get_author(self):
-        return "Sample"
+        pass
