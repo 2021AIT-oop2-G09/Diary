@@ -1,10 +1,10 @@
 from diaries.DiarySample import DiarySample
-from diaries.NagataniDiary import NagataniDiary
+from diaries.KambaraDiary import KambaraDiary
 
 # ↓のリストには、メンバーの各日記が格納されます。
 diaries = [
   DiarySample(),
-  NagataniDiary(),
+  KambaraDiary(),
 ] 
 
 for d in diaries:
